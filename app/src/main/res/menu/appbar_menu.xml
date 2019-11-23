@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:title="Location"
+        android:id="@+id/location"
+
+        app:showAsAction="never"
+        >
+
+        <menu>
+
+            <item
+                android:title="Sd Card"
+                app:showAsAction="never"
+                android:id="@+id/sdcard"></item>
+            <item
+                android:title="Internal"
+                app:showAsAction="never"
+                android:id="@+id/internal"></item>
+            <item
+                android:title="All"
+                app:showAsAction="never"
+                android:id="@+id/all"></item>
+
+            </menu>
+    </item>
+    <item
+        android:title="About"
+        app:showAsAction="never"
+        android:id="@+id/about"
+
+        />
+    <item
+        android:title="Search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"
+        ></item>
+    <item
+        android:title="fevroit"
+        android:id="@+id/favroit"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        app:showAsAction="ifRoom"
+        ></item>
+
+</menu>

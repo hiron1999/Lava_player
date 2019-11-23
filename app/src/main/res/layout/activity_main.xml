@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+<ViewFlipper
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:inAnimation="@android:anim/fade_in"
+    android:id="@+id/vf"
+
+    >
+
+
+
+    <ListView
+        android:id="@+id/lv"
+        style="@android:style/Widget.Material.ExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/holo_orange_light"
+        android:dividerHeight="5dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/k"
+        android:alpha="6"
+        android:nestedScrollingEnabled="true"
+        android:scrollIndicators="top|bottom"
+
+        ></ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        android:background="@drawable/disk"
+        >
+
+        <TextView
+            android:id="@+id/songtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Title:"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/playimg"
+            android:layout_width="335dp"
+
+            android:layout_height="366dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/ic_music_note_black_24dp"
+            android:layout_marginTop="50dp" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="337dp"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/seek"/>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="56dp">
+
+            <ImageButton
+                android:id="@+id/fevbtn"
+                android:layout_width="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+
+                android:background="@drawable/ic_favorite_border_black_24dp"
+                />
+            <ImageButton
+                android:id="@+id/previous"
+                android:layout_width="56dp"
+                android:layout_marginLeft="25dp"
+                android:layout_height="56dp"
+
+                android:background="@drawable/ic_skip_previous_black_24dp" />
+
+
+            <ImageButton
+                android:id="@+id/pauseplay"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+
+
+                android:layout_marginTop="0dp"
+                android:background="@drawable/ic_pause_circle_outline_black_24dp" />
+
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="56dp"
+
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginEnd="90dp"
+                android:background="@drawable/ic_skip_next_black_24dp" />
+
+
+        </TableRow>
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/fevlv"
+        style="@android:style/Widget.Material.ExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:dividerHeight="5dp"
+        android:scrollbars="vertical"
+        android:background="@drawable/i"
+        ></ListView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/j"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="8dp"
+            android:layout_margin="30dp"
+            android:outlineSpotShadowColor="@android:color/black"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/bb"
+
+
+                android:lineSpacingExtra="8sp"
+                android:id="@+id/abouttxt"
+                android:textAlignment="viewStart"
+                android:textColor="@color/yellow"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ViewFlipper>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/appbar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@android:color/holo_red_light"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="5dp"
+        app:fabCradleRoundedCornerRadius="14dp"
+        app:fabCradleVerticalOffset="8dp"
+        app:hideOnScroll="true"
+
+        app:layout_anchorGravity="bottom"
+
+        >
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        app:maxImageSize="30dp"
+
+        app:fabSize="normal"
+        android:backgroundTint="#F51A08"
+        app:layout_anchor="@id/appbar"
+        android:id="@+id/fbtn"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -6,6 +6,7 @@ If you are useing a device lower than API 26 app may not be work properly....
 
 In my device(ApI level 27) this app works properly(The screen short is given).
 This app dose not contains any resourse audio file. It fetch audio (mp3/wav)files from device(Internal&Externalstorage). 
+<h1>Playlist</h1>
 
-
+![ss](play_list.png)
 <p>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Thankyou<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<</p>

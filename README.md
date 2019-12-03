@@ -29,13 +29,7 @@ This app dose not contains any resourse audio file. It fetch audio (mp3/wav)file
  			<div class="caption"><h3>save songs in fevrout list</h3>		</div>
  			</div>
  		</div>
- 	<div class="col-md-3 col-sm-6">
- 			<div class="thumbnail">
- 			<img src="screenshort/4.jpg" alt="phone image" width="200px" >
- 			<div class="caption"><h3>Loarding</h3>		</div>
- 			</div>
- 		</div>
- 	<div class="col-md-3 col-sm-6">
+  	<div class="col-md-3 col-sm-6">
  			<div class="thumbnail">
  			<img src="Onmenu click.png" alt="phone image" width="200px" >
  			<div class="caption"><h3>menu</h3>		</div>

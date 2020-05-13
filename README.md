@@ -1,4 +1,4 @@
-# Media_player
+# Lava_player
 it is a light weight app which fetch local storage music and play it .
 <p>It is very user friendly</p>
 This app is compatable with API 28.
